@@ -23,5 +23,15 @@ namespace Parcial1_Ap2_Frandy.Models
 
         [Required(ErrorMessage = "La descripcion es obligatoria")]
         public double ValorInventario { get; set; }
+
+        public Articulos()
+        {
+
+            ProductoId = 0;
+            Descripcion = string.Empty;
+            Existencia = 0;
+            Costo = 0;
+            ValorInventario = 0;
+        }
     }
 }
