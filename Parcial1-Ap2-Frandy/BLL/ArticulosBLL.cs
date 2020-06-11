@@ -46,8 +46,6 @@ namespace Parcial1_Ap2_Frandy.BLL
             return paso;
         }
 
-
-
         private static bool Modificar(Articulos articulo)
         {
             bool paso = false;
@@ -100,7 +98,6 @@ namespace Parcial1_Ap2_Frandy.BLL
             return paso;
         }
 
-
         public static Articulos Buscar(int id)
         {
             Articulos articulo;
@@ -123,8 +120,6 @@ namespace Parcial1_Ap2_Frandy.BLL
 
             return articulo;
         }
-
-
 
         public static bool Existe(int id)
         {
@@ -149,8 +144,6 @@ namespace Parcial1_Ap2_Frandy.BLL
 
         }
 
-
-
         public static List<Articulos> GetList(Expression<Func<Articulos, bool>> articulo)
         {
             List<Articulos> Lista = new List<Articulos>();
@@ -170,11 +163,8 @@ namespace Parcial1_Ap2_Frandy.BLL
             {
                 contexto.Dispose();
             }
-
             return Lista;
         }
-
-
 
         public static List<Articulos> GetList()
         {
@@ -195,9 +185,7 @@ namespace Parcial1_Ap2_Frandy.BLL
             {
                 contexto.Dispose();
             }
-
             return Lista;
-
         }
     }
 }
