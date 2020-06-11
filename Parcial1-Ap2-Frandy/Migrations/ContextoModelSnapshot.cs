@@ -14,6 +14,33 @@ namespace Parcial1_Ap2_Frandy.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "3.1.5");
+
+            modelBuilder.Entity("Parcial1_Ap2_Frandy.Models.Articulos", b =>
+            {
+
+                b.Property<int>("ProductoId")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("INTEGER");
+
+                b.Property<double>("Costo")
+                    .HasColumnType("REAL");
+
+                b.Property<string>("Descripcion")
+                    .IsRequired()
+                    .HasColumnType("TEXT");
+
+                b.Property<int>("Existencia")
+                    .HasColumnType("INTEGER");
+
+                b.Property<double>("ValorInventario")
+                    .HasColumnType("REAL");
+
+                b.HasKey("ProductoId");
+
+                b.ToTable("Articulo");
+
+            });
+
 #pragma warning restore 612, 618
         }
     }
