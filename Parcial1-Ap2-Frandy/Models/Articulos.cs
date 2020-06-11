@@ -22,7 +22,6 @@ namespace Parcial1_Ap2_Frandy.Models
         public double Costo { get; set; }
 
         [Required(ErrorMessage = "La descripcion es obligatoria")]
-
         public double ValorInventario { get; set; }
     }
 }
